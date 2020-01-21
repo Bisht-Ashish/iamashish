@@ -13,4 +13,4 @@ jobs:
     - name: Installing Packages
       run: npm install --progress=false
     - name: Building Code
-      run: npm build --prod --aot=true --base-href https://bisht-ashish.github.io/iamashish/
+      run: npm build --prod --aot=true
