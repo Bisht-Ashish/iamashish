@@ -7,10 +7,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Build Code
-      run: npm build
+      run: 
+        npm install --progress=false
+        npm run build
