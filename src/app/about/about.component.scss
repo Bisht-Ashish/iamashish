@@ -1,0 +1,25 @@
+#aboutWrapper{
+    background-image: url('/assets/images/8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 35px;
+    font-family: cursive;
+    .intro{
+        margin: 20px 0;
+        color: black;
+        font-size: 35px;
+    }
+    .content{
+        font-size: 16px;
+        padding: 15px;
+        display: flex;
+        div{
+            flex: 1;
+        }
+    }
+    .avatar{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+}

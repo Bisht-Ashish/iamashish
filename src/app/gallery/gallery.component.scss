@@ -1,0 +1,13 @@
+#galleryWrapper{
+    background-image: url('/assets/images/2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 95vh;
+    .intro{
+        font-family: cursive;
+        padding: 35vh;
+        color: white;
+        font-size: 35px;
+    }
+}

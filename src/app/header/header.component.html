@@ -1,0 +1,6 @@
+<div id="headerWrapper">
+    <div class="navigationOptions">
+        <div *ngFor="let each of navigationOptions" class="navigationOption">
+            <a [href]="each.sectionId"></a>{{each.name}}</div>
+    </div>
+</div>

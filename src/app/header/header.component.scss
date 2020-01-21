@@ -1,0 +1,15 @@
+#headerWrapper{
+    margin: 20px;
+    .navigationOptions{
+        display: flex;
+        color: white;
+        padding-right: 40px;
+        justify-content: flex-end;
+        font-weight: 400;
+        margin: auto;
+        .navigationOption{
+            padding: 20px;
+            cursor: pointer;
+        }
+    }
+}
