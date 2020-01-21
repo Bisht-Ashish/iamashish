@@ -1,0 +1,16 @@
+name: CI for I am Ashish
+
+on: 
+  push: 
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build Code
+      run: npm build
