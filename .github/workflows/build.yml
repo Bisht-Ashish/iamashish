@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: Removing package-lock.json
+      run:  rm /package-lock.json 
     - name: Installing Packages
       run: npm install --progress=false
     - name: Building Code
-      run: npm run build --prod --aot=true
+      run: ./node_modules/@angular/cli/bin/ng build --progress=false --prod --aot=true --base-href=https://bisht-ashish.github.io/iamashish/
