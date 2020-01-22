@@ -15,6 +15,6 @@ jobs:
     - name: Installing Packages
       run: npm install --progress=false
     - name: Building Code
-      run: ./node_modules/@angular/cli/bin/ng build --progress=false --prod --aot=true --base-href=https://bisht-ashish.github.io/iamashish/
+      run:  ng build --progress=false --prod --aot=true --base-href=https://bisht-ashish.github.io/iamashish/
     - name: Deploying
       run: ngh --dir dist/iamashish
