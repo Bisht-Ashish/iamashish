@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [windows-latest]
     steps:
     - uses: actions/checkout@v1
     - name: Removing package-lock.json
@@ -15,6 +15,6 @@ jobs:
     - name: Installing Packages
       run: npm install --progress=false
     - name: Building Code
-      run: ./node_modules/@angular/cli/bin/ng build --progress=false --prod --aot=true --base-href=https://bisht-ashish.github.io/iamashish/
+      run:  ng build --progress=false --prod --aot=true --base-href=https://bisht-ashish.github.io/iamashish/
     - name: Deploying
-      run: ./node_modules/.bin/surge -p dist/ --domain=https://bisht-ashish.github.io/iamashish/
+      run: ngh --dir dist/iamashish
