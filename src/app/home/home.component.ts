@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-    // public content = 'El Camino';
-    // public subContent = 'A Breaking Bad Movie';
-    public content = 'I am Ashish';
-    public subContent = 'A Web Developer';
+    public content = 'El Camino';
+    public subContent = 'A Breaking Bad Movie';
+    // public content = 'I am Ashish';
+    // public subContent = 'A Web Developer';
 }
 
