@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Removing package-lock.json
-      run:  rm /package-lock.json 
+      run:  rm ./package-lock.json 
     - name: Installing Packages
       run: npm install --progress=false
     - name: Building Code
