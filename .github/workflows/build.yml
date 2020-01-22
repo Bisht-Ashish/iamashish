@@ -13,8 +13,8 @@ jobs:
     - name: Removing package-lock.json
       run:  rm ./package-lock.json 
     - name: Installing Packages
-      run: npm install --progress=false
+      run:  npm install --progress=false
     - name: Building Code
-      run:  ng build --progress=false --prod --aot=true --base-href=https://bisht-ashish.github.io/iamashish/
+      run:  npm run build
     - name: Deploying
-      run: ngh --dir dist/iamashish
+      run:  npm run deploy
