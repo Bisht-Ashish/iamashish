@@ -16,5 +16,5 @@ jobs:
       run:  npm install --progress=false
     - name: Building Code
       run:  npm run build
-    - name: Deploying
+    - name: Deploying Build
       run:  npm run deploy
