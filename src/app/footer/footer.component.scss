@@ -1,0 +1,41 @@
+#footerWrapper{
+    // background-image: url('./assets/images/7.jpg');
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
+    background-color: #fff;
+    height: 50vh;
+    .footerContent{
+        display: flex;
+        .footerDetail, .footerMap{
+            display: flex;
+            flex: 1;
+            justify-content:center;
+            flex-direction: column;
+            >div{
+                display: flex;
+                >div{
+                    flex: 1;
+                }
+                >label{
+                    flex: 1;
+                }
+            }
+        }
+    }
+    .sectionHeader{
+        display: flex;
+        justify-content: center;
+        font-family: cursive;
+        color: #333;
+        font-size: 35px;
+    }
+    .displayRow{
+        display: flex;
+        flex-direction: row;
+        line-height: 35px;
+        >label {
+            width:100px;
+        }
+    }
+}

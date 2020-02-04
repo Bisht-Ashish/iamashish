@@ -2,4 +2,28 @@
         <div class="intro">
             <div>{{content}}</div>
         </div>
+        <div id="contactFormWrapper">
+            <mat-card>
+                <mat-card-content>
+                    <form class="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                        <mat-form-field class="contactField">
+                            <input matInput placeholder="Full Name" formControlName="name" >
+                        </mat-form-field>
+
+                        <mat-form-field class="contactField">
+                            <input matInput placeholder="Email Address" formControlName="email" >
+                        </mat-form-field>
+
+                        <mat-form-field class="contactField">
+                            <textarea matInput placeholder="Message" rows="6" formControlName="message" ></textarea>
+                        </mat-form-field>
+
+                        <button mat-button type="submit" [disabled]="contactForm.pristine">Click me!</button>
+                    </form>
+                    <div class="successMessage" *ngIf="successMessage">
+                        Response received successfull!! Will get back to you soon.
+                    </div>
+                </mat-card-content>
+              </mat-card>
+        </div>
     </div>

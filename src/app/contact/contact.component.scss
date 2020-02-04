@@ -3,11 +3,35 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 95vh;
+    height: 60vh;
+    display: flex;
+    padding: 50px 140px;
+    justify-content: flex-end;
+    #contactFormWrapper{
+        min-width: 300px;
+        max-width: 500px;
+        flex: 1;
+        .contactForm {
+          padding: 25px 0;
+          min-width: 150px;
+          max-width: 500px;
+          width: 100%;
+        }
+        .contactField {
+          width: 100%;
+        }
+        button{
+          background-color: gray;
+        }
+        .successMessage{
+          padding: 5px;
+          color: green;
+        }
+    }
     .intro{
-        font-family: cursive;
-        padding: 35vh;
-        color: white;
-        font-size: 35px;
+      flex: 1;
+      font-family: cursive;
+      color: white;
+      font-size: 35px;
     }
 }
